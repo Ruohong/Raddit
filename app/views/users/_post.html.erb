@@ -1,0 +1,7 @@
+<% @user.posts.each do |post| %>
+<div class="comment-div">
+	<span><%= post.title %><span>
+	<p>posted at <%= time_ago_in_words(post.created_at) %> ago </p>
+</div>
+<% end %>
+

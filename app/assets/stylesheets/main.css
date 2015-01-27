@@ -1,0 +1,469 @@
+body {
+	padding-top: 50px;
+}
+
+
+.container h1{
+	display: inline-block;
+	width: 80%;
+}
+
+.container{
+	margin-left: 100px;
+}
+
+.body{
+	margin-top: 100px;
+}
+.dropdown {
+	padding-top: 20px;
+	display: inline-block;
+}
+
+.new-post {
+	position: relative;
+	bottom: 12px;
+	background-color: 
+}
+
+.comment-body{
+	padding-top: 25px;
+	padding-left: 25px;
+}
+
+.main-form{
+	position: relative;
+	top: 25px;
+	right: 135px;
+}
+
+.comment-form{
+	position: relative;
+	right: 145px;
+	top: 10px;
+}
+
+.form-control {
+	width: 600px;
+}
+
+#post_body{
+	height: 150px;
+}
+
+.body-label{
+	margin-top: 30px;
+	padding-right: 0px;
+}
+
+.checkbox{
+	margin-left: 250px;
+}
+
+.optional{
+	position: relative;
+	top: 10px;
+}
+
+.checkbox-name{
+	padding-right: 10px;
+}
+
+.choicebox {
+	display: inline-block;
+	width: 110px;
+	margin-left: 70px;
+	margin-top: 10px;
+}
+.category-label{
+	position: relative;
+	left: 26px;
+	top: 10px;
+}
+
+.create-post{
+	margin-left: -25px;
+	margin-top: 30px;
+}
+
+.alert-block {
+	color: #3a87ad;
+	background-color: #d9edf7;
+	padding: 8px 35px 8px 14px;
+	margin-bottom: 1.6em;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	border: 1px solid #bce8f1;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	width: 70%;
+	margin: 30px auto;
+}
+
+
+.well {
+	min-height: 20px;
+	padding: 19px;
+	margin-bottom: 20px;
+	background-color: whitesmoke;
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+	margin: 25px auto;
+}
+
+.user{
+	width: 60%;
+	margin: 0;
+}
+
+.span8{
+	width: 620px;
+}
+
+h4 {
+	font-size: 17.5px;
+	font-weight: bolder;
+	color: #3a87ad;
+	text-transform: uppercase;
+}
+
+.badge {
+	display: inline-block;
+	padding: 2px 4px;
+	font-size: 11.844px;
+	font-weight: bold;
+	line-height: 14px;
+	color: white;
+	vertical-align: baseline;
+	white-space: nowrap;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	background-color: #999999;
+	padding-left: 9px;
+	padding-right: 9px;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+}
+
+.notice {
+	margin-top: 30px;
+}
+.bs-glyphicon {
+	font-size: 12px;
+	height: 85px;
+	padding: 7px;
+	line-height: 1.4;
+	text-align: center;
+	background-color: #00AFF0;
+}
+
+.navbar {
+	height: 150px;
+}
+
+.fa {
+	padding-top: 10px;
+	color: white;
+}
+.navbar-nav > li {
+	width: 100px;
+	height: 100px;
+	margin: 2px;
+	background-color: #00AFF0;
+}
+
+.navbar-default .navbar-nav > li > a {
+color: white;
+}
+
+.logo{
+	color: #00AFF0;
+	float: left;
+	padding-right: 3px;
+}
+
+.navbar-default .navbar-brand {
+	color: #00AFF0;
+	font-size: 30px;
+	font-family: sans-serif;
+	padding-top: 20px;
+}
+
+.navbar-header{
+	padding-top: 30px;
+}
+
+#home-logo{
+	background-color: #81D339;
+}
+
+
+
+.topiclist{
+	list-style: none;
+	padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	display: block;
+}
+
+.topiclist li{
+	background-color: #81D339;
+	font-size: 12px;
+	color: white;
+}
+
+
+.topiclist i {
+	color: white;
+	font-size: 10px;
+	padding-right: 15px;
+}
+
+.topiclist span{
+	font-weight: 400;
+}
+
+.list-inner {
+	margin-top: -12px;
+}
+
+
+.forumtitle{
+	font-family: 'Open Sans',sans-serif;
+	font-size: 1.1em;
+	font-weight: 600;
+	text-decoration: none;
+	color: #444444;
+	position: relative;
+	top: -20px;
+	left: 15px;
+}
+
+#title{
+	background-color: #81D339;
+	color: white;
+	font-family: 'Open Sans',sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+#title-notice{
+	background-color: #00AFF0;
+	color: white;
+	font-family: 'Open Sans',sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+#title-notice i{
+	position: relative;
+	top: -5px;
+	left: 10px;
+}
+
+#title-notice span{
+	position: relative;
+left: 20px;
+top: -10px;
+}
+#title i{
+	color: white;
+	padding-right: 15px;
+}
+#content{
+	background-color: white;
+}
+#content i{
+	color: white;
+	background-color:#D1D1E0;
+	font-size: 35px;
+	padding: 7px;
+	margin-top: 20px;
+	margin-left: 4px;
+}
+
+.notice-board{
+	background-color: #00AFF0;
+	margin-bottom: 20px;
+}
+
+.notice-board span{
+	color: white;
+	font-size: 14px;
+	padding: 10px;
+	display: inline-block;
+}
+
+.list-inner .list{
+	position: relative;
+	left: 72px;
+	top: -25px;
+}
+
+.forum-logo{
+	position: relative;
+	top: 3px;
+	left: 5px;
+}
+#title span{
+	position: relative;
+	top: -5px;
+}
+#list-td{
+	position: relative;
+	top: 20px;
+	left: 20px;
+}
+
+.board-home{
+	color: #BDC2C7;
+	font-size: 20px;
+	position: relative;
+	top: 100px;
+	left: -160px;
+}
+
+.board-index{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	position: relative;
+	top: 100px;
+	left: -152px;
+	color: #BDC2C7;
+	text-decoration: none;
+}
+
+.create-user{
+	border-radius: 0;
+	background-color: #00AFF0;
+	border: none;
+}
+
+.create-comment {
+	position: relative;
+	left: 130px;
+	top: -15px;
+}
+
+#comment_content{
+	position: relative;
+	left: -41px;
+	top: -30px;
+}
+
+.comment-label{
+	position: relative;
+	top: -55px;
+	left: 119px;
+}
+
+.new-post{
+	position: relative;
+	left: -168px;
+	background-color: #00AFF0;
+	position: relative;
+	left: 715px;
+}
+
+.comment-div{
+	background-color: rgba(0, 175, 240, 0.2);
+	height: 75px;
+	margin-top: 20px;
+	width: 70%;
+	border: 2px solid #00AFF0;
+}
+
+.comment-div span {
+	position: relative;
+	top: 12px;
+	left: 8px;
+}
+
+.comment-div p{
+	font-style: italic;
+}
+
+.comment-insert p{
+	position: relative;
+	top: 20px;
+	left: 16px;
+}
+
+.notice{
+	position: relative;
+	top: 100px;
+}
+
+.well{
+	background-color: rgba(0, 175, 240, 0.2);
+	margin-top: 20px;
+	border: 2px solid #00AFF0;
+}
+
+.vote{
+	width: 100px;
+	position: relative;
+	top: 156px;
+	left: -400px;
+	height: 115px;
+	font-size: 22px;
+}
+
+#new_comment{
+	margin-bottom: 20px;
+}
+
+.create-comment{
+	margin-bottom: 40px;
+}
+
+.row-post{
+	height: 330px;
+	margin-top: -130px;
+	margin-bottom: 30px;
+}
+
+.vote-up{
+	position: relative;
+	top: -10px;
+	left: 16px;
+}
+
+.vote-down{
+	position: relative;
+	top: 14px;
+	left: 17px;
+}
+
+.vote span{
+	position: relative;
+	top: 17px;
+	left: -5px;
+}
+
+.index-post{
+	margin-top: 80px;
+}
+
+footer{
+	background-color: #555555;
+	height: 200px;
+}
+
+.footer-icon{
+	font-size: 25px;
+	padding: 8px;
+	border: white solid 1px;
+}
+
+.footer-info{
+	color: white;
+	font-size: 15px;
+}

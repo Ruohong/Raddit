@@ -1,0 +1,19 @@
+<h2> <%= @user.email %></h2><hr>
+
+<div class="well user">
+	<dl class="dl-horizontal">
+		<dt>Username:</dt>
+		<dd><%= @user.email %><dd>
+		<dt>Time Zone:</dt>
+		<dd>Eastern Time (US &amp; Canada)</dd>
+	</dl>
+</div>
+
+	<h5> My Activity</h5>
+	<ul class="nav nav-tabs">
+		<li><%= link_to "Post", user_post_show_path(@user), remote: :true %></li>
+		<li><%= link_to "Comment", user_comment_show_path(@user), remote: :true %></li>
+	</ul>
+	<div class="user-content">
+		
+	</div>

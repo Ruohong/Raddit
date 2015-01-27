@@ -1,0 +1,28 @@
+
+	<div class="container">
+	  	<%= link_to 'Create Post', new_post_path, class:'btn btn-primary new-post' %>
+	</div>
+
+	<% @posts.each do |post| %>
+		<div class="row row-post">
+		  <div class="span8 well vote">
+		  	<%= link_to "<i class='fa fa-arrow-up'></i>".html_safe, vote_up_path(post), remote: true, class: "vote-up" %>
+		  	<span><%= post.count %></span>
+		  	<%= link_to "<i class='fa fa-arrow-down'></i>".html_safe, vote_down_path(post) , remote: true, class: "vote-down" %>
+		  </div>
+		  <div class="span8 well">
+		  	<% post.categories.each do |category| %>
+		 	<span class="badge"><%= category.name %></span>
+		 	<% end %>
+		    <h4><%= post.title %></h4>
+		  <p><%= post.body %></p>
+		  <p>posted by <%= link_to post.user.email, user_path(post.user) %> at <%= time_ago_in_words(post.created_at) %> ago </p>
+		  <% if current_user %>
+		  <%= link_to "Edit", edit_post_path(post) %>
+		  <%= link_to "Delete", post, method: :delete, :confirm => "Are you sure?" %>
+		  <% end %>
+		</br>
+		   <small><%= link_to "Comment", post_comments_path(post) %></small>
+		</div>
+		</div>
+	<% end %>

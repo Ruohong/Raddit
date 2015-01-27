@@ -1,0 +1,33 @@
+<div class="inner">
+			<table class="table table-striped">
+				<tr id="title">
+					<td><div class="list-inner"><i class="fa fa-th-list fa-2x forum-logo"></i><span>Categories</span></div></td>
+					<td>Topics</td>
+					<td>Posts</td>
+					<td>Last post</td>
+				</tr>
+				<% @categories.each do |category| %>
+				<tr id="content">
+				<td><div class="list-inner"><i class="fa fa-comment-o fa-10x content-logo"></i>
+								<%= link_to category.name, category_path(category), class: "forumtitle"%>
+								<br><span class="list">A short description for our Leo themes.</span>
+							</div>
+						</dt>
+						<td id="list-td"><%= @categories.count %></td>
+						<td id="list-td"><%= @posts.count %></td>
+						<td>
+						</td>
+				</tr>
+				<% end %>
+			</table>
+
+			<table class="table">
+				<tr id="title-notice">
+					<td><i class="fa fa-arrow-circle-o-right fa-2x"></i><span>Topics</span></td>
+				</tr>
+				<tr>
+					<td>Last post</td>
+				</tr>
+			</table>
+
+</div>

@@ -1,0 +1,32 @@
+<%= form_tag sessions_path, :html => {:class => "form-horizontal"} do |f| %>
+
+  <fieldset>
+    <div id="legend">
+      <legend class="">Log In</legend>
+    </div> 
+    <div class="control-group">
+      <!-- E-mail -->      
+      <%= label_tag :email %>
+      <div class="controls">
+       <%= text_field_tag :email, params[:email], :class => "input-xlarge" %>
+       <p class="help-block">Please provide your E-mail</p>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <!-- Password-->
+      <%= label_tag :password %>
+      <div class="controls">
+        <%= password_field_tag :password %>
+        <p class="help-block">Password should be at least 4 characters</p>
+      </div>
+    </div>
+ 
+    <div class="control-group">
+      <!-- Button -->
+      <div class="controls">
+		<%= submit_tag nil, :class => "btn btn-primary create-user" %>
+      </div>
+    </div>
+  </fieldset>
+<% end %>

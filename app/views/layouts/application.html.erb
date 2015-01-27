@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Raddit</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Lobster+Two|Open+Sans+Condensed:700' rel='stylesheet' type='text/css'></head>
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <i class="fa fa-pencil-square-o fa-3x logo"></i><%= link_to 'Leorum', root_path, class: 'navbar-brand' %>
+        </div>
+        <i class="fa fa-home board-home"></i>
+        <%=link_to "Board Index", root_path, class: "board-index"%>
+        <div id="navbar" class="collapse navbar-collapse menu-bar">
+          <ul class="nav navbar-nav pull-right">
+            <li class="bs-glyphicon" id="home-logo"><i class="fa fa-home fa-2x"></i><%= link_to 'Home', root_path %></li>
+            <% if current_user %>
+              <li class="bs-glyphicon"><i class="fa fa-user fa-2x"></i><%= link_to current_user.email, "#" %></li>
+              <li class="bs-glyphicon"><i class="fa fa-sign-out fa-2x"></i><%= link_to "Log Out", log_out_path %></li>
+              <% else %>
+            <li class="bs-glyphicon"><i class="fa fa-users fa-2x"></i><%= link_to 'Sign Up', sign_up_path %></li>
+            <li class="bs-glyphicon"><i class="fa fa-sign-in fa-2x"></i><%= link_to 'Log In', log_in_path %></li>
+            <% end %>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container notice">
+          <% if flash[:notice] %>
+            <div class="alert alert-success"><%= flash[:notice] %></div>
+          <% end %>
+
+          <% if flash[:alert] %>
+            <div class="alert alert-danger"><%= flash[:alert] %></div>
+          <% end %>
+    </div>
+
+
+
+    <div class="container body">
+      <div class="row">
+
+        <div class="col-md-10">
+    	   <%= yield %>
+        </div>
+
+        <div class="col-md-2">
+
+          <div class="notice-board">
+            <i class="fa fa-arrow-circle-o-right"></i><span>SAMPLE BLOCK</span></br>
+            <span class="block-content">Hello, Welcome to Leorum!This is the application we build during the 2nd course for Tealeaf Academy. This is a Reddit-like application, with all features built from scratch without relying on any external libraries or gems.</span>
+          </div>
+
+          <div class="notice-board">
+            <i class="fa fa-arrow-circle-o-right"></i><span>SAMPLE BLOCK</span></br>
+            <span class="block-content">Hello, Welcome to Leorum!This is the application we build during the 2nd course for Tealeaf Academy. This is a Reddit-like application, with all features built from scratch without relying on any external libraries or gems.</span>
+          </div>
+        </div>
+    </div>
+  </div>
+
+    <!-- /.container -->
+
+  <footer class="footer">
+      <div class="container">
+        <h2 class="footer-info">Contact Leo</h2>
+      <hr>
+      <div>
+        <a href="#"><i class="fa fa-facebook footer-icon"></i></a>
+        <a href="#"><i class="fa fa-github footer-icon"></i></a>
+        <a href="#"><i class="fa fa-reddit footer-icon"></i></a>
+        <a href="#"><i class="fa fa-twitter footer-icon"></i></a>
+      </div>
+      </div>
+  </footer> 
+
+</body>
+</html>

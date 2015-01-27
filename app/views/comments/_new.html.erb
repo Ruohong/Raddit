@@ -1,0 +1,9 @@
+<%= form_for [@post, @comment], remote: true, url: {action: "create"}, html: {class: "new-comment-form"} do |f| %>
+  <div class="form-group main-form">
+  <%= f.label :comment, class: 'col-sm-2 control-label comment-label' %>
+      <div class="col-sm-10">
+  <%= f.text_field :content, class: 'form-control' %>
+  <%= f.hidden_field :post_id, :value => @post.id %>
+  	</div>
+  <%= f.submit class: 'btn btn-default create-comment' %>
+  <% end %>
